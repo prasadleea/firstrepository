@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web to Lead</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Create Lead</h1>
-     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DGB000001rr5T" method="POST" 
-     onsubmit="beforesubmit()">
-     <input type=hidden  name="oid"  value="00DGB000001rr5T">
-   
-    <input type=hidden name="retURL"  value="http://127.0.0.1:5500/thanks.html">
-    
-    <input type=hidden name="Lead_Date__c" class="outputdate" />
-    
-    
-    
-    <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true" /><br>
-    
-    <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true" /><br>
-    
-    <label for="email">Email</label>
-    <input  id="email" maxlength="80" name="email" size="20" type="text" required="true" />
-    <br>
+    <form
+      action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DGB000001rr5T"
+      method="POST"
+      onsubmit="beforesubmit()"
+    >
+      <input type="hidden" name="oid" value="00DGB000001rr5T" />
 
-    <label for="LeadDate">Lead Date</label>
-    <input type="date" class="inputdate"  required="true"/><br>
-   <!--Lead Date:<span class="dateInput dateOnlyInput">
+      <input
+        type="hidden"
+        name="retURL"
+        value="https://prasadleea.github.io/firstrepository/thanks.html"
+      />
+
+      <input type="hidden" name="Lead_Date__c" class="outputdate" />
+
+      <label for="first_name">First Name</label
+      ><input
+        id="first_name"
+        maxlength="40"
+        name="first_name"
+        size="20"
+        type="text"
+        required="true"
+      /><br />
+
+      <label for="last_name">Last Name</label
+      ><input
+        id="last_name"
+        maxlength="80"
+        name="last_name"
+        size="20"
+        type="text"
+        required="true"
+      /><br />
+
+      <label for="email">Email</label>
+      <input
+        id="email"
+        maxlength="80"
+        name="email"
+        size="20"
+        type="text"
+        required="true"
+      />
+      <br />
+
+      <label for="LeadDate">Lead Date</label>
+      <input type="date" class="inputdate" required="true" /><br />
+      <!--Lead Date:<span class="dateInput dateOnlyInput">
     <input  id="00NGB00000OjGWw" name="00NGB00000OjGWw" size="12" type="text" /></span><br>-->
-    
-    <input type="submit" name="submit" class="submit">
-    
+
+      <input type="submit" name="submit" class="submit" />
     </form>
-    
-</body>
+  </body>
 </html>
