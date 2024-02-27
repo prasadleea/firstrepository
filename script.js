@@ -24,6 +24,7 @@ function timestamp() {
   }
 }
 setInterval(timestamp, 500);
+
 function captchasucess() {
   captchachecked = true;
 }
